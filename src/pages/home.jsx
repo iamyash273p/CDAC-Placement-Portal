@@ -1,10 +1,13 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+import { PublicNavbar } from "./components/navbar/navbar";
+import AdminDashboard from "../pages/AdminDashboard";
+function Home() {
+  return (
+    <>
+      <PublicNavbar />
+      <AdminDashboard/>
+      <h1>Welcome to CDAC Placement Portal</h1>
+    </>
+  );
+}
+
+export default Home;

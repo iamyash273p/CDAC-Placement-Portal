@@ -1,0 +1,24 @@
+.admin-layout {
+  min-height: 100vh;
+  width: 100%;
+  background: #f5f7fb;
+  color: #202b43;
+}
+
+.admin-shell {
+  display: flex;
+  align-items: stretch;
+  min-height: calc(100vh - 72px);
+}
+
+.admin-main {
+  flex: 1;
+  min-width: 0;
+  padding: 30px;
+  overflow-x: auto;
+}
+
+@media (max-width: 700px) {
+  .admin-shell { min-height: calc(100vh - 64px); }
+  .admin-main { padding: 20px 14px; }
+}
