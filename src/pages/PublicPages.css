@@ -1,0 +1,28 @@
+.public-page {
+  min-height: calc(100vh - 68px);
+  box-sizing: border-box;
+  padding: 64px 7%;
+  background: #f5f7fc;
+  color: #1e293b;
+}
+.public-hero { max-width: 850px; margin: 0 auto 42px; text-align: center; }
+.public-eyebrow { color: #3156b8; font-size: 12px; font-weight: 800; letter-spacing: 1.5px; }
+.public-hero h1 { margin: 14px 0; color: #172554; font-size: clamp(30px, 5vw, 46px); line-height: 1.15; }
+.public-hero p { max-width: 680px; margin: 0 auto; color: #64748b; font-size: 17px; line-height: 1.7; }
+.public-content-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; max-width: 1100px; margin: 0 auto; }
+.public-info-card, .contact-card { padding: 26px; border: 1px solid #e5eaf3; border-radius: 13px; background: #fff; box-shadow: 0 8px 24px rgba(30, 55, 110, .05); }
+.public-info-card h2 { margin: 0 0 12px; color: #263b80; font-size: 19px; }
+.public-info-card p { margin: 0; color: #64748b; line-height: 1.7; }
+.contact-page { padding-top: 48px; }
+.contact-hero { margin-bottom: 28px; }
+.contact-card { max-width: 650px; margin: 0 auto; padding: 30px; }
+.contact-form { display: grid; gap: 18px; }
+.contact-field { display: flex; flex-direction: column; gap: 8px; }
+.contact-field label { color: #334155; font-size: 14px; font-weight: 700; }
+.contact-field input, .contact-field textarea { width: 100%; box-sizing: border-box; padding: 12px 13px; border: 1px solid #cbd5e1; border-radius: 7px; color: #1e293b; font: inherit; outline: none; }
+.contact-field input:focus, .contact-field textarea:focus { border-color: #3156b8; box-shadow: 0 0 0 3px rgba(49, 86, 184, .1); }
+.contact-field textarea { resize: vertical; }
+.contact-submit { justify-self: start; padding: 12px 22px; border: 0; border-radius: 7px; background: #263b80; color: #fff; font-weight: 700; cursor: pointer; }
+.contact-submit:hover { background: #1d2f69; }
+.contact-notice { margin: 0; color: #3156b8; font-size: 13px; line-height: 1.5; }
+@media (max-width: 800px) { .public-content-grid { grid-template-columns: 1fr; } .public-page { padding: 40px 18px; } }

@@ -1,61 +1,55 @@
-
-.navbar {
+.portal-navbar {
+  width: 100%;
+  min-height: 68px;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 5%;
-  background-color: #263b80;
-  color: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-  gap: 20px;
+  gap: 24px;
+  padding: 14px 5%;
+  background: #263b80;
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.12);
 }
-
-.nav-logo {
-  font-size: 21px;
-  font-weight: bold;
+.portal-brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 750;
   white-space: nowrap;
 }
-
-.nav-links {
+.portal-nav-links {
   display: flex;
   align-items: center;
-  gap: 25px;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 26px;
 }
-
-.nav-link {
-  color: white;
+.portal-nav-link {
+  color: #e8edff;
   text-decoration: none;
   font-size: 15px;
-  transition: 0.2s;
+  font-weight: 500;
+  transition: color .2s ease;
 }
-
-.nav-link:hover,
-.nav-link.active {
-  color: #ffd166;
-}
-
-.logout-btn {
-  background-color: #ffffff;
-  color: #263b80;
-  border: none;
+.portal-nav-link:hover,
+.portal-nav-link.active { color: #ffd166; }
+.portal-login-link,
+.portal-logout-btn {
+  border: 0;
+  border-radius: 7px;
   padding: 9px 17px;
-  border-radius: 6px;
+  background: #fff;
+  color: #263b80;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
   cursor: pointer;
-  font-weight: bold;
+  white-space: nowrap;
 }
-
-.logout-btn:hover {
-  background-color: #e8edff;
-}
-
-@media (max-width: 800px) {
-  .navbar {
-    flex-direction: column;
-  }
-
-  .nav-links {
-    justify-content: center;
-    gap: 15px;
-  }
+.portal-login-link:hover,
+.portal-logout-btn:hover { background: #e8edff; }
+@media (max-width: 720px) {
+  .portal-navbar { flex-direction: column; gap: 14px; padding: 16px; }
+  .portal-nav-links { gap: 14px 20px; }
 }

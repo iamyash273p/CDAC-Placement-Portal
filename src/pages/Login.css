@@ -1,0 +1,119 @@
+.admin-register-page {
+  min-height: 100vh;
+  background: #f4f6fb;
+}
+
+.admin-register-main {
+  min-height: calc(100vh - 65px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 42px 20px 28px;
+}
+
+.admin-register-card {
+  width: 100%;
+  max-width: 620px;
+  padding: 38px 42px 30px;
+  background: #fff;
+  border: 1px solid #e7eaf2;
+  border-radius: 16px;
+  box-shadow: 0 14px 40px rgba(28, 45, 94, 0.09);
+}
+
+.admin-register-heading { text-align: center; margin-bottom: 28px; }
+.admin-register-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 15px;
+  border-radius: 13px;
+  background: #e9edff;
+  color: #304a9a;
+  font-size: 22px;
+  font-weight: 800;
+}
+.admin-register-eyebrow {
+  color: #5268ad;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+.admin-register-heading h1 {
+  margin: 9px 0 8px;
+  color: #202b49;
+  font-size: 27px;
+  letter-spacing: -0.6px;
+}
+.admin-register-heading p { margin: 0; color: #788198; font-size: 14px; }
+
+.admin-register-form { display: flex; flex-direction: column; gap: 17px; }
+.admin-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.admin-form-field { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.admin-form-field label { color: #34405c; font-size: 13px; font-weight: 700; }
+.admin-form-field input {
+  width: 100%;
+  height: 45px;
+  padding: 0 13px;
+  border: 1px solid #dce1ec;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #26324d;
+  font-size: 13px;
+  transition: border-color .2s, box-shadow .2s;
+}
+.admin-form-field input::placeholder { color: #a0a8b8; }
+.admin-form-field input:focus {
+  border-color: #526bc0;
+  box-shadow: 0 0 0 3px rgba(82, 107, 192, .12);
+}
+.admin-form-field small { color: #8991a3; font-size: 11px; line-height: 1.5; }
+.admin-register-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 47px;
+  margin-top: 3px;
+  border: 0;
+  border-radius: 8px;
+  background: #304a9a;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+}
+.admin-register-submit:hover { background: #243b83; transform: translateY(-1px); }
+.admin-form-message { margin: 0; padding: 10px 12px; border-radius: 7px; font-size: 12px; }
+.admin-form-message.error { color: #a32626; background: #fff0f0; }
+.admin-form-message.success { color: #17643b; background: #eaf8ef; }
+.admin-register-footer { margin: 23px 0 0; text-align: center; color: #7c8496; font-size: 13px; }
+.admin-register-footer a { color: #304a9a; font-weight: 700; text-decoration: none; }
+.admin-register-footer a:hover { text-decoration: underline; }
+.admin-register-note { margin: 17px 0 0; color: #9299a9; font-size: 11px; text-align: center; }
+
+@media (max-width: 600px) {
+  .admin-register-main { padding: 28px 14px; }
+  .admin-register-card { padding: 28px 20px 24px; }
+  .admin-register-heading h1 { font-size: 23px; }
+  .admin-form-row { grid-template-columns: 1fr; }
+}
+
+
+/* Login page additions */
+.login-card { max-width: 520px; }
+.login-switch {
+  width: 100%; min-height: 42px; margin: -5px 0 22px; padding: 0 14px;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  border: 1px solid #d8def0; border-radius: 8px; background: #f5f7ff;
+  color: #304a9a; font-size: 13px; font-weight: 700; cursor: pointer;
+  transition: background .2s, border-color .2s;
+}
+.login-switch:hover { background: #eaf0ff; border-color: #aebce8; }
+.login-card .admin-register-form { gap: 20px; }
+@media (max-width: 600px) { .login-switch { margin-bottom: 18px; } }

@@ -1,5 +1,5 @@
-import AdminNavbar from "../components/Navbar/mynav/AdminNavbar";
-import AdminSidebar from "../components/Navbar/mynav/AdminSidebar";
+import AdminNavbar from "../components/Navbar/AdminNavbar";
+import AdminSidebar from "../components/Navbar/AdminSidebar";
 import "./AdminLayout.css";
 
 function AdminLayout({ children }) {
@@ -13,5 +13,4 @@ function AdminLayout({ children }) {
     </div>
   );
 }
-
 export default AdminLayout;
